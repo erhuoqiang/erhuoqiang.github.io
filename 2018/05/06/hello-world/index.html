@@ -14,7 +14,7 @@
     
     
     
-    <title>Hello World | Keep moving | Keep moving</title>
+    <title>Hello World | Keep moving | 时间换天赋,坚持换机遇</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -102,9 +102,9 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/"  >
+              <a href="/about" target="_blank" >
                 <i class="icon icon-lg icon-link"></i>
-                测试
+                About
               </a>
             </li>
         
@@ -245,7 +245,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://erhuoqiang.github.io/2018/05/06/hello-world/&title=《Hello World》 — Keep moving&source=时间换天赋,坚持换机遇" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://erhuoqiang.github.io/2018/05/06/hello-world/&title=《Hello World》 — Keep moving&source=Just for fun" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -304,6 +304,23 @@
 
 
 
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
 
 
 
@@ -340,7 +357,7 @@
         </p>
     </div>
     <div class="bottom">
-        <p><span>erhuoqiang &copy; 2015 - 2018</span>
+        <p><span>erhuoqiang &copy; 2018</span>
             <span>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
@@ -368,7 +385,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://erhuoqiang.github.io/2018/05/06/hello-world/&title=《Hello World》 — Keep moving&source=时间换天赋,坚持换机遇" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://erhuoqiang.github.io/2018/05/06/hello-world/&title=《Hello World》 — Keep moving&source=Just for fun" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -443,10 +460,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = 'Keep moving';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = 'Keep moving';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
