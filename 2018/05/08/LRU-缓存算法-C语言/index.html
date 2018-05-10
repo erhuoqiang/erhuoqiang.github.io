@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="Keep moving">
 <meta property="og:description" content="项目背景:去年底项目需求对数据进行缓存并频繁的获取,所以选用LRU对其进行管理以下代码在vs2017下测试通过，无内存泄漏，功能正常LRU介绍  LRUCacheImp.c12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-10T07:33:26.125Z">
+<meta property="og:updated_time" content="2018-05-10T07:35:17.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LRU 缓存算法-C语言">
 <meta name="twitter:description" content="项目背景:去年底项目需求对数据进行缓存并频繁的获取,所以选用LRU对其进行管理以下代码在vs2017下测试通过，无内存泄漏，功能正常LRU介绍  LRUCacheImp.c12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
@@ -197,7 +197,7 @@
 <h3 id="Debug-h"><a href="#Debug-h" class="headerlink" title="Debug.h"></a>Debug.h</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _DEBUG_H_</span><br><span class="line">#define _DEBUG_H_</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">#undef SHOW_INFO</span><br><span class="line">#define SHOW_INFO</span><br><span class="line"></span><br><span class="line">#ifdef SHOW_INFO</span><br><span class="line">#define info_printf(...) printf(&quot;[INFO] %s (%d):&quot;, __func__, __LINE__);printf(__VA_ARGS__)</span><br><span class="line">#else</span><br><span class="line">#define info_printf(...)</span><br><span class="line">#endif</span><br><span class="line"></span><br><span class="line">#undef WARNING</span><br><span class="line">#define WARNING</span><br><span class="line"></span><br><span class="line">#ifdef WARNING</span><br><span class="line">#define warn_printf(...) printf(&quot;[WARNING] %s (%d):&quot;, __func__, __LINE__);printf(__VA_ARGS__)</span><br><span class="line">#else</span><br><span class="line">#define warn_printf(...)</span><br><span class="line">#endif</span><br><span class="line"></span><br><span class="line">#undef ERROR</span><br><span class="line">#define ERROR</span><br><span class="line"></span><br><span class="line">#ifdef ERROR</span><br><span class="line">#define err_printf(...) printf(&quot;[ERROR] %s (%d):&quot;, __func__, __LINE__);printf(__VA_ARGS__)</span><br><span class="line">#else</span><br><span class="line">#define err_printf(...)</span><br><span class="line">#endif</span><br><span class="line"></span><br><span class="line">#endif //_DEBUG_H_</span><br></pre></td></tr></table></figure>
 <h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><p>前几天在同事的影响下,决定开始写自己的技术博客,并参考了同事关于搭建Hexo<br>博客的文章还有网上一篇关于Hexo的文章.</p>
 <blockquote>
-<p><a href="http://xyz1001.xyz/2017/04/02/software-usage-of-hexo/" target="_blank" rel="noopener">张帆-博客</a><br><a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">手把手教你使用Hexo搭建博客</a></p>
+<p><a href="http://xyz1001.xyz/2017/04/02/software-usage-of-hexo/" target="_blank" rel="noopener">同事-博客</a><br><a href="https://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">手把手教你使用Hexo搭建博客</a></p>
 </blockquote>
 
         </div>
@@ -207,7 +207,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-05-10T07:33:26.125Z" itemprop="dateUpdated">2018-05-10 15:33:26</time>
+    Last updated: <time datetime="2018-05-10T07:35:17.516Z" itemprop="dateUpdated">2018-05-10 15:35:17</time>
 </span><br>
 
 
